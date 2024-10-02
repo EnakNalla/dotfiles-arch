@@ -1,0 +1,2 @@
+.config/systemd/user/default.target.wants
+.config/tmux/plugins

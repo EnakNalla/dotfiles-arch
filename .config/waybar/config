@@ -1,0 +1,107 @@
+[
+  {
+    "backlight": {
+      "device": "intel_backlight",
+      "format": "{percent}% <span font='11'>{icon}</span>",
+      "format-icons": [
+        "",
+        "󰖙"
+      ],
+      "on-scroll-down": "/nix/store/5sapnnqarcxqiqwcpqfqjj6hhhy6fprr-brightnessctl-0.5.1/bin/brightnessctl --class backlight set 5%-",
+      "on-scroll-up": "/nix/store/5sapnnqarcxqiqwcpqfqjj6hhhy6fprr-brightnessctl-0.5.1/bin/brightnessctl --class backlight set 5%+"
+    },
+    "battery": {
+      "format": "<span font='11'>{icon}</span> {capacity}% ",
+      "format-charging": "<span font='11'></span> {capacity}% ",
+      "format-icons": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "interval": 1,
+      "max-length": 25,
+      "states": {
+        "critical": 15,
+        "warning": 30
+      }
+    },
+    "clock": {
+      "format": "{:%H:%M:%S}",
+      "interval": 1,
+      "tooltip-format": "{:%d-%m-%Y}"
+    },
+    "cpu": {
+      "format": "  {icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}",
+      "format-icons": [
+        "<span color='#50FA7B'>▁</span>",
+        "<span color='#8BE9FD'>▂</span>",
+        "<span color='#e9e9f4'>▃</span>",
+        "<span color='#e9e9f4'>▄</span>",
+        "<span color='#F1FA8C'>▅</span>",
+        "<span color='#F1FA8C'>▆</span>",
+        "<span color='#FFB86C'>▇</span>",
+        "<span color='#FF5555'>█</span>"
+      ],
+      "interval": 1
+    },
+    "height": 24,
+    "hyprland/taskbar": {
+      "ignore-list": [
+        "foot"
+      ],
+      "on-click": "activate",
+      "on-click-middle": "close"
+    },
+    "hyprland/window": {
+      "max-length": 64
+    },
+    "hyprland/workspaces": {
+      "on-click": "activate",
+      "on-scroll-down": "hyprctl dispatch workspace e+1",
+      "on-scroll-up": "hyprctl dispatch workspace e-1"
+    },
+    "layer": "top",
+    "memory": {
+      "format": "  {used:0.1f}G/{total:0.1f}G",
+      "interval": 30
+    },
+    "modules-center": [
+      "hyprland/window"
+    ],
+    "modules-left": [
+      "hyprland/workspaces",
+      "wlr/taskbar"
+    ],
+    "modules-right": [
+      "pulseaudio",
+      "cpu",
+      "memory",
+      "battery",
+      "tray",
+      "clock"
+    ],
+    "position": "top",
+    "pulseaudio": {
+      "format": "<span font='13'>{icon}</span> {volume}% ",
+      "format-bluetooth": "<span font='13'>{icon}</span> {volume}% ",
+      "format-bluetooth-muted": "<span font='13'>x</span> {volume}% ",
+      "format-icons": [
+        " ",
+        " ",
+        " "
+      ],
+      "format-muted": "<span font='13'>x</span> {volume}% ",
+      "on-click": "/nix/store/1xa0rxm3d51sbk81ismi29cnd4vw6sfz-pamixer-1.6/bin/pamixer -t",
+      "on-click-middle": "/nix/store/wqrm8268vcgcah2ayybmh9g8d272c8jz-pavucontrol-6.0/bin/pavucontrol",
+      "on-click-right": "/nix/store/1xa0rxm3d51sbk81ismi29cnd4vw6sfz-pamixer-1.6/bin/pamixer --default-source -t",
+      "scroll-step": 5,
+      "tooltip-format": "{desc}, {volume}%"
+    },
+    "spacing": 4,
+    "tray": {
+      "spacing": 4
+    }
+  }
+]

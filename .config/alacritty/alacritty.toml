@@ -1,0 +1,80 @@
+[colors]
+[colors.cursor]
+cursor = "#f8f8f2"
+text = "#282a36"
+
+[colors.footer_bar]
+background = "#282936"
+foreground = "#e9e9f4"
+
+[colors.hints]
+[colors.hints.end]
+background = "#50FA7B"
+foreground = "#282936"
+
+[colors.hints.start]
+background = "#F1FA8C"
+foreground = "#282936"
+
+[colors.normal]
+black = "#282936"
+blue = "#BD93F9"
+cyan = "#8BE9FD"
+green = "#50FA7B"
+magenta = "#FF79C6"
+red = "#FF5555"
+white = "#e9e9f4"
+yellow = "#F1FA8C"
+
+[colors.primary]
+background = "#282936"
+bright_foreground = "#ffffff"
+foreground = "#e9e9f4"
+
+[colors.search]
+[colors.search.focused_match]
+background = "#F1FA8C"
+foreground = "#44475A"
+
+[colors.search.matches]
+background = "#50FA7B"
+foreground = "#44475A"
+
+[colors.selection]
+background = "#44475A"
+text = "CellForeground"
+
+[colors.vi_mode_cursor]
+cursor = "CellForeground"
+text = "CellBackground"
+
+[cursor]
+[cursor.style]
+shape = "Beam"
+
+[cursor.vi_mode_style]
+blinking = "Off"
+shape = "Block"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 14
+[font.bold]
+style = "Bold"
+
+[font.italic]
+style = "Italic"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+[window]
+decorations = "Full"
+dynamic_padding = true
+dynamic_title = true
