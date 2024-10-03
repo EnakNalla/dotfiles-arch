@@ -51,6 +51,7 @@ PACMAN_PACKAGES=(
   "feh"
   "linux-firmware"
   "mpv"
+  "github-cli"
 
   # dev
   "rustup"
